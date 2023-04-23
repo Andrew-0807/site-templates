@@ -1,0 +1,30 @@
+p {
+    font-size: 20px;
+
+    &.center {
+        display: flex;
+        justify-content: center;
+    }
+    &.footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: 30px;
+        width: 100%;
+        background: #999;
+    }
+}
+hr {
+    &.invsBorder {
+        border: none;
+        padding: 1.5rem;
+    }
+
+    &.divider {
+        border-style: dotted;
+        border-color: rgba(12, 12, 12);
+        opacity: 40%;
+        border-width: 0.5rem;
+        border-left: 0;
+    }
+}

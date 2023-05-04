@@ -63,7 +63,7 @@ export default function About() {
                 </motion.h1>
                 <div className="center">
                     <ul className="center">
-                        <Socials></Socials>
+                        <Socials />
                     </ul>
                 </div>
             </div>

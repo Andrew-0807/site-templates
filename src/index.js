@@ -23,6 +23,7 @@ root.render(
                 <Route exact path="/site-templates/home" element={<Home />} />
             </Routes>
         </HashRouter>
+
         <Footer />
     </React.StrictMode>
 )

@@ -8,11 +8,11 @@ export default function StdNavbar() {
                 animate={{ x: 100 }}
                 whileHover={{ scale: 1.2, rotate: 100 }}
                 className="brand"
-                href="/site-templates/home">
+                href="/home">
                 Home
             </motion.a>
 
-            <NavLink href="/site-templates/about" className="">
+            <NavLink href="/about" className="">
                 About us
             </NavLink>
         </motion.div>

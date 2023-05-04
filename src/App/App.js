@@ -1,13 +1,9 @@
+import './App.css'
 
-import './App.css';
-
-function App() {
-    return(
-    <>
-    </>
+export default function App() {
+    return (
+        <>
+            <a href="/home">Home</a>
+        </>
     )
 }
-
-
-
-export default App;

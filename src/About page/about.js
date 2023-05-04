@@ -1,5 +1,5 @@
 import './About.scss'
-import 'E:/Programming/Javascript/Learning/Site/site-templates/src/Navbar/navbar.css'
+import '../Navbar/navbar.css'
 import StdNavbar from '../Navbar/StdNavbar'
 import { motion } from 'framer-motion'
 export default function About() {

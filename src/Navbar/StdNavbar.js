@@ -15,9 +15,6 @@ export default function StdNavbar() {
             <NavLink href="/about" className="">
                 About us
             </NavLink>
-            <NavLink href="/navbar" className=" ">
-                Navbar
-            </NavLink>
         </motion.div>
     )
 }

@@ -61,30 +61,27 @@ export default function About() {
                     className="center">
                     Contact us
                 </motion.h1>
-                <div className="center">
-                    <ul className="center">
-                        <Socials />
-                    </ul>
+                <hr className="invsBorder" />
+                <div className="">
+                    <Socials />
                 </div>
             </div>
         </div>
     )
 }
-function Chanel(children, ...props) {
-    return (
-        <motion.li whileHover={{ scale: 1 }} {...props}>
-            {children}
-        </motion.li>
-    )
-}
 
 const chanels = ['Email : ', 'Phone : ', 'Facebook : ', 'Instagram : ']
 function Socials() {
-    chanels.map((name, index) => {
-        return (
-            <div key={index}>
-                <li>{name}</li>
-            </div>
-        )
-    })
+    return (
+        <ul className="media">
+            {chanels.map((name, index) => (
+                <motion.li
+                    className="media"
+                    whileHover={{ scale: 1.4 }}
+                    key={index}>
+                    {name}
+                </motion.li>
+            ))}
+        </ul>
+    )
 }

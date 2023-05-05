@@ -1,3 +1,4 @@
+@import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 .inline {
     display: flex;
     flex-direction: row;
@@ -8,21 +9,26 @@
     text-align: center;
     gap: 2rem;
 }
-
-.divider {
-    border-style: dotted none none none;
-    border: none;
-    border-width: 0.5rem;
-    display: grid;
-    margin: 0.2rem;
-    color: rgba(77, 75, 75, 0.822);
+hr {
+    .divider {
+        border-style: dotted none none none;
+        border: none;
+        border-width: 0.5rem;
+        display: grid;
+        margin: 0.2rem;
+        color: $subtext1;
+    }
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin: 0;
+
+    color: $text;
+    .gadient {
+        background: linear-gradient(180deg, $crust 10%, $base 90%);
+    }
 }
 
 .nav {
@@ -34,14 +40,6 @@
 
 li {
     list-style: none;
-}
-
-.btn {
-    border-radius: 1.5rem;
-    background-color: white;
-    color: black;
-
-    height: 1.5rem;
 }
 
 .title {
@@ -58,20 +56,10 @@ li {
     margin: 0;
 }
 
-.bg-darkish {
-    background-color: rgba(77, 75, 75, 0.377);
-    color: antiquewhite;
-    border-radius: 1.5rem;
-    color: white;
-}
-body {
-    background-color: rgba(3, 1, 29, 0.41);
-}
 a {
     text-decoration-line: none;
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
+    color: $text;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;

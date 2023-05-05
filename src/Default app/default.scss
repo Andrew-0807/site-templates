@@ -1,5 +1,11 @@
+@import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 .center {
     display: flex;
+
     justify-content: center;
     size: 3rem;
+}
+* {
+    color: $text;
+    background-color: $base;
 }

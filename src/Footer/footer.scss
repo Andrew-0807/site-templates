@@ -1,3 +1,4 @@
+@import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 p {
     font-size: 20px;
 
@@ -11,7 +12,7 @@ p {
         bottom: 0px;
         height: 30px;
         width: 100%;
-        background: #999;
+        background: $surface0;
     }
 }
 hr {
@@ -22,9 +23,13 @@ hr {
 
     &.divider {
         border-style: dotted;
-        border-color: rgba(12, 12, 12);
+        border-color: $crust;
         opacity: 40%;
         border-width: 0.5rem;
         border-left: 0;
     }
+}
+* {
+    background-color: $base;
+    color: $text;
 }

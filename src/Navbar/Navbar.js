@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import './navbar.css'
+import './navbar.scss'
 
 import { useState } from 'react'
 import Box from '@mui/material/Box'

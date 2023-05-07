@@ -10,6 +10,7 @@ import About from './About page/about.js'
 
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Home from './Home/home'
+import { Tasks } from './Task-Manager/tasks'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -21,6 +22,7 @@ root.render(
                 {/* <Route path="blogs" element={<Blogs />} /> */}
                 <Route path="/About" element={<About />} />
                 <Route exact path="/home" element={<Home />} />
+                <Route path="/tasks" element={<Tasks />} />
             </Routes>
         </BrowserRouter>
         <App />

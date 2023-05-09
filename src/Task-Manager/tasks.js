@@ -5,7 +5,7 @@ import StdNavbar from '../Navbar/StdNavbar'
 
 export const Tasks = () => {
     return (
-        <>
+        <div id="Tasks">
             <StdNavbar />
             <div className="start ">
                 <motion.h1
@@ -21,7 +21,7 @@ export const Tasks = () => {
                 </div>
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }
 

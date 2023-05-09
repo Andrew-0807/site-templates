@@ -4,7 +4,7 @@ import StdNavbar from '../Navbar/StdNavbar'
 import { motion } from 'framer-motion'
 export default function About() {
     return (
-        <div>
+        <div id="About">
             <StdNavbar />
             <hr className="invsBorder" />
             <h1 className="center">About us</h1>

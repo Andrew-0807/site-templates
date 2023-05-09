@@ -1,29 +1,31 @@
 @import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
-body {
-    background-color: $base;
-    color: $text;
-}
-.title {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-}
-.taskList {
-    margin-right: 1;
-    margin-left: auto;
-    justify-content: start;
-    .task {
-        background-color: $blue;
+#Tasks {
+    body {
+        background-color: $base;
+        color: $text;
     }
-}
-.container {
-    display: flex;
-    align-content: start;
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .taskList {
+        margin-right: 1;
+        margin-left: auto;
+        justify-content: start;
+        .task {
+            background-color: $blue;
+        }
+    }
+    .container {
+        display: flex;
+        align-content: start;
 
-    margin: 1px;
-    border: 1px;
-    padding: 1px;
-}
-h6 {
-    font-size: 1.2rem;
+        margin: 1px;
+        border: 1px;
+        padding: 1px;
+    }
+    h6 {
+        font-size: 1.2rem;
+    }
 }

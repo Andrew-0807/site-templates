@@ -17,9 +17,8 @@
             background-color: $blue;
         }
     }
-    .container {
+    .tcontainer {
         display: flex;
-        align-content: start;
 
         margin: 1px;
         border: 1px;
@@ -27,5 +26,18 @@
     }
     h6 {
         font-size: 1.2rem;
+        display: flex;
+        justify-content: left;
+        align-content: start;
+        padding-left: 1rem;
+        background-color: transparent;
+    }
+    #btn-next {
+        border-radius: 30px;
+        margin: 1.5rem;
+        border: $overlay2;
+        background-color: $overlay2;
+        padding: $base;
+        display: inline;
     }
 }

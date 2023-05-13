@@ -8,39 +8,40 @@ import img1 from './img.jpg'
 
 export default function Home() {
     return (
-        <>
+        <div id="home">
             <StdNavbar />
-            <main className="container">
+            <main className="">
                 <motion.h1
-                    animate={{ y: 100, x: 10, rotate: 360 }}
+                    animate={{}}
                     whileHover={{
                         scale: 1.5,
-                        transition: { y: 100, x: 10, rotate: 360 },
+                        transition: {},
                     }}
-                    className="container hover">
+                    className=""
+                    id="Title-middle">
                     Product/store title
                 </motion.h1>
                 <motion.img drag src={img1} alt="Image" className="image" />
             </main>
             <hr className="invsBorder" />
             <content>
-                <motion.h1
-                    initial={{ opacity: 0, x: -100 }}
+                <h1
+                    initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     whileHover={{ scale: 1.2 }}
-                    className="center">
+                    className=""
+                    id="Title-middle">
                     Description
-                </motion.h1>
-
-                <hr className="invsBorder-small" />
-
+                </h1>
+                <hr className="invsBorder" />
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0, delay: 10.5 }}
-                    className="container">
+                    className="storage">
                     <motion.div
-                        whileHover={{ x: 25, y: 0 }}
-                        className="container-left">
+                        whileHover={{}}
+                        initial={{ x: 25 }}
+                        className="block">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -59,8 +60,9 @@ export default function Home() {
                         className="divider"
                     />
                     <motion.div
-                        whileHover={{ x: -25, y: 0 }}
-                        className="container-right">
+                        whileHover={{}}
+                        initial={{ x: -25 }}
+                        className="block">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Viverra justo nec ultrices dui sapien.
@@ -71,6 +73,6 @@ export default function Home() {
                 </motion.div>
             </content>
             <Footer />
-        </>
+        </div>
     )
 }

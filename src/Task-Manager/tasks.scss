@@ -26,7 +26,7 @@
     }
     h6 {
         font-size: 1.2rem;
-        display: flex;
+        display: inline;
         justify-content: left;
         align-content: start;
         padding-left: 1rem;
@@ -34,10 +34,33 @@
     }
     #btn-next {
         border-radius: 30px;
-        margin: 1.5rem;
+        margin-right: 1rem;
         border: $overlay2;
         background-color: $overlay2;
         padding: $base;
-        display: inline;
+        display: inline-flex;
+
+        font-size: large;
+        float: right;
+    }
+
+    #dropDown {
+        padding: 0.3rem;
+        margin: 0.2rem;
+        display: inline-flex;
+        flex-direction: column;
+
+        background-color: $surface0;
+        border-radius: 50px;
+        margin-left: 1rem;
+    }
+    #selectable {
+        background-color: $overlay1;
+        border-radius: 40px;
+        margin: 0.2rem;
+        padding: 0.3rem;
+        position: relative;
+        display: inline-flex;
+        width: fit-content;
     }
 }

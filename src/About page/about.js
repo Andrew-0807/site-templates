@@ -27,9 +27,7 @@ export default function About() {
             <br className="phone" />
 
             <motion.div className="storage">
-                <motion.div
-                    className="block"
-                    whileHover={{ scale: 1.3, x: 200 }}>
+                <div className="block">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -38,18 +36,16 @@ export default function About() {
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
-                </motion.div>
-
-                <motion.div
-                    className="block"
-                    whileHover={{ scale: 1.3, x: -200 }}>
+                </div>
+                <br className="phone" />
+                <div className="block">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Viverra justo nec ultrices dui sapien. Fringilla
                     urna porttitor rhoncus dolor. Sem integer vitae justo eget
                     magna fermentum iaculis eu non. Felis bibendum ut tristique
                     et egestas quis ipsum.
-                </motion.div>
+                </div>
             </motion.div>
             <div className="">
                 <br className="" />

@@ -1,46 +1,43 @@
 @import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 #home {
-    hr {
-        &.invsBorder {
-            border: none;
-            padding: 1.5rem;
+    image {
+        @media screen and (min-width: 800px) {
+            width: 10cm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+        width: 100%;
+        height: 70%;
+    }
 
-        &.divider {
-            border-style: dotted;
-            border-color: $crust;
-            opacity: 40%;
-            border-width: 0.5rem;
-            rotate: 90deg;
-            width: 20rem;
-            border-top: 0;
-        }
-    }
-    * {
-        background-color: $base;
-        color: $text;
-    }
-    #Title-middle {
+    .center {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: sticky;
-        background-color: transparent;
     }
-    .storage {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        position: absolute;
+    @media (min-width: 700px) {
+        overflow: hidden;
+        .storage {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: top;
+
+            .block {
+                width: fit-content;
+
+                padding: 1rem;
+                padding-bottom: 0.5rem;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 699px) {
         .block {
-            width: fit-content;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            display: flex;
+            padding: 1rem;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
         }
-    }
-    .image {
-        display: flex;
-        justify-content: center;
-        align-content: center;
     }
 }

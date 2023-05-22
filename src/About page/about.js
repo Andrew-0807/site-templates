@@ -6,26 +6,30 @@ export default function About() {
     return (
         <div id="About">
             <StdNavbar />
-            <hr className="invsBorder" />
-            <h1 className="center">About us</h1>
-            <hr className="invsBorder" />
+            <br className="phone" />
             <motion.h1
-                initial={{ opacity: 0, x: -100 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ type: 'spring', stiffness: 300 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                whileHover={{ scale: 1.2 }}
+                className="center">
+                About us
+            </motion.h1>
+            <br className="phone x2" />
+
+            <motion.h1
+                initial={{ scale: 0.1 }}
+                whileInView={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 300 }}
                 className="center">
                 Description
             </motion.h1>
 
-            <hr className="invsBorder-small" />
+            <br className="phone" />
 
-            <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0, delay: 10.5 }}
-                className="container">
+            <motion.div className="storage">
                 <motion.div
-                    whileHover={{ x: 25, y: 0 }}
-                    className="container-left">
+                    className="block"
+                    whileHover={{ scale: 1.3, x: 200 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -35,16 +39,10 @@ export default function About() {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                 </motion.div>
-                <motion.hr
-                    whileHover={{
-                        opacity: 0.1,
-                        scale: 4,
-                    }}
-                    className="divider"
-                />
+
                 <motion.div
-                    whileHover={{ x: -25, y: 0 }}
-                    className="container-right">
+                    className="block"
+                    whileHover={{ scale: 1.3, x: -200 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Viverra justo nec ultrices dui sapien. Fringilla
@@ -54,14 +52,18 @@ export default function About() {
                 </motion.div>
             </motion.div>
             <div className="">
+                <br className="" />
                 <motion.h1
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    whileHover={{ scale: 1.2 }}
+                    initial={{ opacity: 0, y: 100, x: -100 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 300,
+                    }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
                     className="center">
                     Contact us
                 </motion.h1>
-                <hr className="invsBorder" />
+                <br className="" />
                 <div className="">
                     <Socials />
                 </div>
@@ -75,12 +77,9 @@ function Socials() {
     return (
         <ul className="media">
             {chanels.map((name, index) => (
-                <motion.li
-                    className="media"
-                    whileHover={{ scale: 1.4 }}
-                    key={index}>
+                <li className="media" key={index}>
                     {name}
-                </motion.li>
+                </li>
             ))}
         </ul>
     )

@@ -1,5 +1,6 @@
 @import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 #home {
+    overflow: hidden;
     image {
         @media screen and (min-width: 800px) {
             width: 10cm;
@@ -12,6 +13,7 @@
     }
 
     .center {
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,7 +27,7 @@
 
             .block {
                 width: fit-content;
-
+                background-color: transparent;
                 padding: 1rem;
                 padding-bottom: 0.5rem;
                 padding-top: 0.5rem;

@@ -12,16 +12,17 @@ export default function Home() {
             <StdNavbar />
             <main className="">
                 <motion.h1
-                    animate={{}}
-                    whileHover={{
-                        scale: 1.5,
-                        transition: {},
-                    }}
+                    initial={{ opacity: 0, x: 100 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     className="center">
                     Product/store title
                 </motion.h1>
                 <motion.img
                     drag
+                    initial={{ opacity: 0, x: 0, y: -100 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
                     src={img1}
                     alt="Image"
                     className="image center"
@@ -29,20 +30,27 @@ export default function Home() {
             </main>
 
             <content>
-                <h1
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    whileHover={{ scale: 1.2 }}
+                <motion.h1
+                    initial={{ opacity: 0, x: 0, y: -100 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 300,
+                    }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
                     className="center">
                     Description
-                </h1>
+                </motion.h1>
 
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0, delay: 10.5 }}
                     className="storage">
                     <br className="phone" />
-                    <div className="block">
+                    <motion.div
+                        className="block"
+                        initial={{ opacity: 0, x: -100, y: 0 }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                        whileInView={{ opacity: 1, x: 0, y: 0 }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -52,16 +60,20 @@ export default function Home() {
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit
                         anim id est laborum.
-                    </div>
+                    </motion.div>
                     <br className="phone" />
-                    <div className="block">
+                    <motion.div
+                        className="block"
+                        initial={{ opacity: 0, x: 100, y: 0 }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                        whileInView={{ opacity: 1, x: 0, y: 0 }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Viverra justo nec ultrices dui sapien.
                         Fringilla urna porttitor rhoncus dolor. Sem integer
                         vitae justo eget magna fermentum iaculis eu non. Felis
                         bibendum ut tristique et egestas quis ipsum.
-                    </div>
+                    </motion.div>
                 </motion.div>
             </content>
             <br className="phone" />

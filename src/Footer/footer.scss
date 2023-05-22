@@ -1,7 +1,7 @@
 @import "../Themes/Catppuccin Theme/Catppuccin Theme.scss";
 #footer {
     p {
-        font-size: 20px;
+        font-size: 10px;
 
         &.center {
             display: flex;
@@ -11,7 +11,7 @@
             position: fixed;
             left: 0px;
             bottom: 0px;
-            height: 30px;
+            height: 15px;
             width: 100%;
             background: $surface0;
         }
